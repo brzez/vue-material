@@ -39,9 +39,5 @@ export default {
   },
   mounted() {
     this.closestThemedParent = this.getClosestThemedParent(this.$parent);
-
-    if (!this.$material.currentTheme) {
-      this.$material.setCurrentTheme('default');
-    }
   }
 };
