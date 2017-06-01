@@ -163,6 +163,9 @@
         this.$emit('selected', value);
       },
       selectMultiple(index, value, text) {
+        if (!this.multiple) {
+          return;
+        }
         let values = [];
 
         this.multipleOptions[index] = {
