@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 429);
+/******/ 	return __webpack_require__(__webpack_require__.s = 436);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -190,7 +190,37 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 161:
+/***/ 100:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = install;
+
+var _mdSubheader = __webpack_require__(324);
+
+var _mdSubheader2 = _interopRequireDefault(_mdSubheader);
+
+var _mdSubheader3 = __webpack_require__(264);
+
+var _mdSubheader4 = _interopRequireDefault(_mdSubheader3);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function install(Vue) {
+  Vue.component('md-subheader', _mdSubheader2.default);
+
+  Vue.material.styles.push(_mdSubheader4.default);
+}
+module.exports = exports['default'];
+
+/***/ }),
+
+/***/ 163:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -225,32 +255,32 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 228:
+/***/ 231:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 260:
+/***/ 264:
 /***/ (function(module, exports) {
 
 module.exports = ".THEME_NAME.md-subheader.md-primary {\n  color: PRIMARY-COLOR; }\n\n.THEME_NAME.md-subheader.md-accent {\n  color: ACCENT-COLOR; }\n\n.THEME_NAME.md-subheader.md-warn {\n  color: WARN-COLOR; }\n"
 
 /***/ }),
 
-/***/ 319:
+/***/ 324:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(228)
+__webpack_require__(231)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(161),
+  __webpack_require__(163),
   /* template */
-  __webpack_require__(387),
+  __webpack_require__(393),
   /* scopeId */
   null,
   /* cssModules */
@@ -278,7 +308,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 387:
+/***/ 393:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -300,41 +330,11 @@ if (false) {
 
 /***/ }),
 
-/***/ 429:
+/***/ 436:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(99);
+module.exports = __webpack_require__(100);
 
-
-/***/ }),
-
-/***/ 99:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = install;
-
-var _mdSubheader = __webpack_require__(319);
-
-var _mdSubheader2 = _interopRequireDefault(_mdSubheader);
-
-var _mdSubheader3 = __webpack_require__(260);
-
-var _mdSubheader4 = _interopRequireDefault(_mdSubheader3);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function install(Vue) {
-  Vue.component('md-subheader', _mdSubheader2.default);
-
-  Vue.material.styles.push(_mdSubheader4.default);
-}
-module.exports = exports['default'];
 
 /***/ })
 

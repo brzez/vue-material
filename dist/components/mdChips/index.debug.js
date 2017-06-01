@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 412);
+/******/ 	return __webpack_require__(__webpack_require__.s = 418);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -190,7 +190,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 130:
+/***/ 131:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -240,7 +240,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 131:
+/***/ 132:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -375,28 +375,28 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 225:
+/***/ 228:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 245:
+/***/ 248:
 /***/ (function(module, exports) {
 
 module.exports = ".THEME_NAME.md-chip {\n  background-color: BACKGROUND-CONTRAST-0.12; }\n  .THEME_NAME.md-chip.md-deletable:hover, .THEME_NAME.md-chip.md-deletable:focus {\n    background-color: BACKGROUND-CONTRAST-0.54;\n    color: BACKGROUND-COLOR; }\n    .THEME_NAME.md-chip.md-deletable:hover .md-delete, .THEME_NAME.md-chip.md-deletable:focus .md-delete {\n      color: BACKGROUND-COLOR; }\n  .THEME_NAME.md-chip .md-delete {\n    color: BACKGROUND-CONTRAST-0.38; }\n    .THEME_NAME.md-chip .md-delete .md-ripple {\n      color: BACKGROUND-COLOR; }\n"
 
 /***/ }),
 
-/***/ 283:
+/***/ 287:
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(130),
+  __webpack_require__(131),
   /* template */
-  __webpack_require__(360),
+  __webpack_require__(365),
   /* scopeId */
   null,
   /* cssModules */
@@ -424,18 +424,18 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 284:
+/***/ 288:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(225)
+__webpack_require__(228)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(131),
+  __webpack_require__(132),
   /* template */
-  __webpack_require__(377),
+  __webpack_require__(383),
   /* scopeId */
   null,
   /* cssModules */
@@ -463,7 +463,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 360:
+/***/ 365:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -501,7 +501,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 377:
+/***/ 383:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -595,7 +595,7 @@ module.exports = exports["default"];
 
 /***/ }),
 
-/***/ 412:
+/***/ 418:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(82);
@@ -614,15 +614,15 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = install;
 
-var _mdChips = __webpack_require__(284);
+var _mdChips = __webpack_require__(288);
 
 var _mdChips2 = _interopRequireDefault(_mdChips);
 
-var _mdChip = __webpack_require__(283);
+var _mdChip = __webpack_require__(287);
 
 var _mdChip2 = _interopRequireDefault(_mdChip);
 
-var _mdChips3 = __webpack_require__(245);
+var _mdChips3 = __webpack_require__(248);
 
 var _mdChips4 = _interopRequireDefault(_mdChips3);
 

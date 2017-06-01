@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 414);
+/******/ 	return __webpack_require__(__webpack_require__.s = 420);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -132,25 +132,25 @@ module.exports = function normalizeComponent (
 
 /***/ }),
 
-/***/ 226:
+/***/ 229:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 292:
+/***/ 296:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(226)
+__webpack_require__(229)
 
 var Component = __webpack_require__(0)(
   /* script */
   null,
   /* template */
-  __webpack_require__(379),
+  __webpack_require__(385),
   /* scopeId */
   null,
   /* cssModules */
@@ -178,7 +178,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 379:
+/***/ 385:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -196,7 +196,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 414:
+/***/ 420:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(84);
@@ -215,7 +215,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = install;
 
-var _mdDivider = __webpack_require__(292);
+var _mdDivider = __webpack_require__(296);
 
 var _mdDivider2 = _interopRequireDefault(_mdDivider);
 

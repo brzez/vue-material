@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 428);
+/******/ 	return __webpack_require__(__webpack_require__.s = 435);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -190,7 +190,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 160:
+/***/ 162:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -268,32 +268,32 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 210:
+/***/ 212:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 259:
+/***/ 263:
 /***/ (function(module, exports) {
 
 module.exports = ".THEME_NAME.md-spinner .md-spinner-path {\n  stroke: PRIMARY-COLOR; }\n\n.THEME_NAME.md-spinner.md-accent .md-spinner-path {\n  stroke: ACCENT-COLOR; }\n\n.THEME_NAME.md-spinner.md-warn .md-spinner-path {\n  stroke: WARN-COLOR; }\n"
 
 /***/ }),
 
-/***/ 318:
+/***/ 323:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(210)
+__webpack_require__(212)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(160),
+  __webpack_require__(162),
   /* template */
-  __webpack_require__(347),
+  __webpack_require__(352),
   /* scopeId */
   null,
   /* cssModules */
@@ -321,7 +321,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 347:
+/***/ 352:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -360,15 +360,15 @@ if (false) {
 
 /***/ }),
 
-/***/ 428:
+/***/ 435:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(98);
+module.exports = __webpack_require__(99);
 
 
 /***/ }),
 
-/***/ 98:
+/***/ 99:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -379,11 +379,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = install;
 
-var _mdSpinner = __webpack_require__(318);
+var _mdSpinner = __webpack_require__(323);
 
 var _mdSpinner2 = _interopRequireDefault(_mdSpinner);
 
-var _mdSpinner3 = __webpack_require__(259);
+var _mdSpinner3 = __webpack_require__(263);
 
 var _mdSpinner4 = _interopRequireDefault(_mdSpinner3);
 

@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 413);
+/******/ 	return __webpack_require__(__webpack_require__.s = 419);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -190,7 +190,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 132:
+/***/ 133:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -370,7 +370,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 133:
+/***/ 134:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -435,7 +435,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 134:
+/***/ 135:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -505,7 +505,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 135:
+/***/ 136:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -601,32 +601,32 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 216:
+/***/ 218:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 246:
+/***/ 249:
 /***/ (function(module, exports) {
 
 module.exports = ".THEME_NAME.md-dialog-container .md-dialog {\n  background-color: BACKGROUND-COLOR;\n  color: BACKGROUND-CONTRAST; }\n"
 
 /***/ }),
 
-/***/ 285:
+/***/ 289:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(216)
+__webpack_require__(218)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(132),
+  __webpack_require__(133),
   /* template */
-  __webpack_require__(363),
+  __webpack_require__(368),
   /* scopeId */
   null,
   /* cssModules */
@@ -654,14 +654,14 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 286:
+/***/ 290:
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
   null,
   /* template */
-  __webpack_require__(393),
+  __webpack_require__(399),
   /* scopeId */
   null,
   /* cssModules */
@@ -689,14 +689,14 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 287:
+/***/ 291:
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
   null,
   /* template */
-  __webpack_require__(367),
+  __webpack_require__(372),
   /* scopeId */
   null,
   /* cssModules */
@@ -724,14 +724,14 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 288:
+/***/ 292:
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
   null,
   /* template */
-  __webpack_require__(361),
+  __webpack_require__(366),
   /* scopeId */
   null,
   /* cssModules */
@@ -759,14 +759,14 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 289:
+/***/ 293:
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(133),
+  __webpack_require__(134),
   /* template */
-  __webpack_require__(378),
+  __webpack_require__(384),
   /* scopeId */
   null,
   /* cssModules */
@@ -794,14 +794,14 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 290:
+/***/ 294:
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(134),
+  __webpack_require__(135),
   /* template */
-  __webpack_require__(400),
+  __webpack_require__(406),
   /* scopeId */
   null,
   /* cssModules */
@@ -829,14 +829,14 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 291:
+/***/ 295:
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(135),
+  __webpack_require__(136),
   /* template */
-  __webpack_require__(359),
+  __webpack_require__(364),
   /* scopeId */
   null,
   /* cssModules */
@@ -864,7 +864,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 359:
+/***/ 364:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -921,7 +921,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 361:
+/***/ 366:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -939,7 +939,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 363:
+/***/ 368:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -982,24 +982,6 @@ if (false) {
 
 /***/ }),
 
-/***/ 367:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "md-dialog-content"
-  }, [_vm._t("default")], 2)
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-44792925", module.exports)
-  }
-}
-
-/***/ }),
-
 /***/ 37:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1030,7 +1012,25 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 378:
+/***/ 372:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "md-dialog-content"
+  }, [_vm._t("default")], 2)
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-44792925", module.exports)
+  }
+}
+
+/***/ }),
+
+/***/ 384:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -1065,7 +1065,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 393:
+/***/ 399:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -1083,7 +1083,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 400:
+/***/ 406:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -1125,7 +1125,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 413:
+/***/ 419:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(83);
@@ -1144,35 +1144,35 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = install;
 
-var _mdDialog = __webpack_require__(285);
+var _mdDialog = __webpack_require__(289);
 
 var _mdDialog2 = _interopRequireDefault(_mdDialog);
 
-var _mdDialogTitle = __webpack_require__(288);
+var _mdDialogTitle = __webpack_require__(292);
 
 var _mdDialogTitle2 = _interopRequireDefault(_mdDialogTitle);
 
-var _mdDialogContent = __webpack_require__(287);
+var _mdDialogContent = __webpack_require__(291);
 
 var _mdDialogContent2 = _interopRequireDefault(_mdDialogContent);
 
-var _mdDialogActions = __webpack_require__(286);
+var _mdDialogActions = __webpack_require__(290);
 
 var _mdDialogActions2 = _interopRequireDefault(_mdDialogActions);
 
-var _mdDialogAlert = __webpack_require__(289);
+var _mdDialogAlert = __webpack_require__(293);
 
 var _mdDialogAlert2 = _interopRequireDefault(_mdDialogAlert);
 
-var _mdDialogConfirm = __webpack_require__(290);
+var _mdDialogConfirm = __webpack_require__(294);
 
 var _mdDialogConfirm2 = _interopRequireDefault(_mdDialogConfirm);
 
-var _mdDialogPrompt = __webpack_require__(291);
+var _mdDialogPrompt = __webpack_require__(295);
 
 var _mdDialogPrompt2 = _interopRequireDefault(_mdDialogPrompt);
 
-var _mdDialog3 = __webpack_require__(246);
+var _mdDialog3 = __webpack_require__(249);
 
 var _mdDialog4 = _interopRequireDefault(_mdDialog3);
 

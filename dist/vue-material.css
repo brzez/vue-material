@@ -4201,6 +4201,37 @@ img.md-icon {
 /* Responsive Breakpoints */
 /* Transitions - Based on Angular Material */
 /* Elevation - Based on Angular Material */
+.md-rating-bar {
+  width: auto;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 3px;
+  border-radius: 2px;
+}
+.md-rating-bar > .md-full-icon {
+    overflow-x: hidden;
+    display: inherit;
+}
+.md-rating-bar > .md-empty-icon > .md-icon,
+  .md-rating-bar > .md-full-icon > .md-icon {
+    margin: 0;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.md-rating-bar:not([disabled]):hover {
+    background-color: rgba(153, 153, 153, 0.2);
+}
+.md-rating-bar[disabled] > .md-empty-icon > .md-icon,
+  .md-rating-bar[disabled] > .md-full-icon > .md-icon {
+    cursor: default;
+}
+/* Common */
+/* Responsive Breakpoints */
+/* Transitions - Based on Angular Material */
+/* Elevation - Based on Angular Material */
 .md-select {
   width: 100%;
   min-width: 128px;
@@ -4210,7 +4241,7 @@ img.md-icon {
 .md-select:focus {
     outline: none;
 }
-.md-select:after {
+.md-select:not(.md-select-icon):after {
     margin-top: 2px;
     position: absolute;
     top: 50%;
@@ -5251,7 +5282,6 @@ to {
     overflow: hidden;
 }
 .md-tabs .md-tabs-wrapper {
-    width: 9999em;
     position: absolute;
     top: 0;
     right: 0;

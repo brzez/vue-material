@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 424);
+/******/ 	return __webpack_require__(__webpack_require__.s = 431);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -268,7 +268,7 @@ module.exports = function(it){
 
 /***/ }),
 
-/***/ 155:
+/***/ 157:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -393,7 +393,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 156:
+/***/ 158:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -430,7 +430,8 @@ exports.default = {
     value: [String, Number, Array],
     disabled: Boolean,
     placeholder: String,
-    mdMenuClass: String
+    mdMenuClass: String,
+    mdMenuOptions: Object
   },
   mixins: [_mixin2.default],
   data: function data() {
@@ -446,7 +447,8 @@ exports.default = {
   computed: {
     classes: function classes() {
       return {
-        'md-disabled': this.disabled
+        'md-disabled': this.disabled,
+        'md-select-icon': this.hasIcon
       };
     },
     contentClasses: function contentClasses() {
@@ -455,6 +457,14 @@ exports.default = {
       }
 
       return this.mdMenuClass;
+    },
+    hasIcon: function hasIcon() {
+      return this.$slots['icon'];
+    },
+    valueStyle: function valueStyle() {
+      return this.hasIcon ? {
+        display: 'none'
+      } : {};
     }
   },
   watch: {
@@ -559,6 +569,9 @@ exports.default = {
       this.$emit('selected', value);
     },
     selectMultiple: function selectMultiple(index, value, text) {
+      if (!this.multiple) {
+        return;
+      }
       var values = [];
 
       this.multipleOptions[index] = {
@@ -599,6 +612,7 @@ exports.default = {
     }
   }
 }; //
+//
 //
 //
 //
@@ -781,7 +795,7 @@ module.exports = function(it){
 
 /***/ }),
 
-/***/ 232:
+/***/ 235:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -812,7 +826,7 @@ module.exports = function(it){
 
 /***/ }),
 
-/***/ 255:
+/***/ 259:
 /***/ (function(module, exports) {
 
 module.exports = ".THEME_NAME.md-select:after {\n  color: BACKGROUND-CONTRAST-0.54; }\n\n.THEME_NAME.md-select:after {\n  color: BACKGROUND-CONTRAST-0.38; }\n\n.THEME_NAME.md-select-content .md-menu-item.md-selected, .THEME_NAME.md-select-content .md-menu-item.md-checked {\n  color: PRIMARY-COLOR; }\n"
@@ -928,14 +942,14 @@ module.exports = function(object, names){
 
 /***/ }),
 
-/***/ 313:
+/***/ 318:
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(155),
+  __webpack_require__(157),
   /* template */
-  __webpack_require__(382),
+  __webpack_require__(388),
   /* scopeId */
   null,
   /* cssModules */
@@ -963,18 +977,18 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 314:
+/***/ 319:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(232)
+__webpack_require__(235)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(156),
+  __webpack_require__(158),
   /* template */
-  __webpack_require__(395),
+  __webpack_require__(401),
   /* scopeId */
   null,
   /* cssModules */
@@ -1059,7 +1073,7 @@ module.exports = { "default": __webpack_require__(42), __esModule: true };
 
 /***/ }),
 
-/***/ 382:
+/***/ 388:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -1099,14 +1113,22 @@ if (false) {
 
 /***/ }),
 
-/***/ 395:
+/***/ 4:
+/***/ (function(module, exports) {
+
+var core = module.exports = {version: '2.4.0'};
+if(typeof __e == 'number')__e = core; // eslint-disable-line no-undef
+
+/***/ }),
+
+/***/ 401:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "md-select",
     class: [_vm.themeClass, _vm.classes]
-  }, [_c('md-menu', {
+  }, [_c('md-menu', _vm._b({
     attrs: {
       "md-close-on-select": !_vm.multiple
     },
@@ -1118,16 +1140,17 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.$emit('close')
       }
     }
-  }, [_c('span', {
+  }, 'md-menu', _vm.mdMenuOptions), [_vm._t("icon"), _vm._v(" "), _c('span', {
     ref: "value",
     staticClass: "md-select-value",
+    style: (_vm.valueStyle),
     attrs: {
       "md-menu-trigger": ""
     }
   }, [_vm._v(_vm._s(_vm.selectedText || _vm.placeholder))]), _vm._v(" "), _c('md-menu-content', {
     staticClass: "md-select-content",
     class: [_vm.themeClass, _vm.contentClasses]
-  }, [_vm._t("default")], 2)], 1), _vm._v(" "), _c('select', {
+  }, [_vm._t("default")], 2)], 2), _vm._v(" "), _c('select', {
     attrs: {
       "name": _vm.name,
       "id": _vm.id,
@@ -1163,14 +1186,6 @@ if (false) {
 
 /***/ }),
 
-/***/ 4:
-/***/ (function(module, exports) {
-
-var core = module.exports = {version: '2.4.0'};
-if(typeof __e == 'number')__e = core; // eslint-disable-line no-undef
-
-/***/ }),
-
 /***/ 42:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1179,10 +1194,10 @@ module.exports = __webpack_require__(4).Object.keys;
 
 /***/ }),
 
-/***/ 424:
+/***/ 431:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(94);
+module.exports = __webpack_require__(95);
 
 
 /***/ }),
@@ -1302,7 +1317,7 @@ module.exports = function(it, key){
 
 /***/ }),
 
-/***/ 94:
+/***/ 95:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1313,15 +1328,15 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = install;
 
-var _mdSelect = __webpack_require__(314);
+var _mdSelect = __webpack_require__(319);
 
 var _mdSelect2 = _interopRequireDefault(_mdSelect);
 
-var _mdOption = __webpack_require__(313);
+var _mdOption = __webpack_require__(318);
 
 var _mdOption2 = _interopRequireDefault(_mdOption);
 
-var _mdSelect3 = __webpack_require__(255);
+var _mdSelect3 = __webpack_require__(259);
 
 var _mdSelect4 = _interopRequireDefault(_mdSelect3);
 

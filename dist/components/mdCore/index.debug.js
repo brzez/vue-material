@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 436);
+/******/ 	return __webpack_require__(__webpack_require__.s = 443);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -132,7 +132,7 @@ module.exports = function normalizeComponent (
 
 /***/ }),
 
-/***/ 106:
+/***/ 107:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -143,19 +143,19 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = install;
 
-var _mdTheme = __webpack_require__(111);
+var _mdTheme = __webpack_require__(112);
 
 var _mdTheme2 = _interopRequireDefault(_mdTheme);
 
-var _mdInkRipple = __webpack_require__(110);
+var _mdInkRipple = __webpack_require__(111);
 
 var _mdInkRipple2 = _interopRequireDefault(_mdInkRipple);
 
-var _core = __webpack_require__(265);
+var _core = __webpack_require__(269);
 
 var _core2 = _interopRequireDefault(_core);
 
-__webpack_require__(206);
+__webpack_require__(208);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -193,7 +193,7 @@ module.exports = __webpack_require__(3) ? function(object, key, value){
 
 /***/ }),
 
-/***/ 110:
+/***/ 111:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -204,7 +204,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = install;
 
-var _mdInkRipple = __webpack_require__(334);
+var _mdInkRipple = __webpack_require__(339);
 
 var _mdInkRipple2 = _interopRequireDefault(_mdInkRipple);
 
@@ -217,7 +217,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 111:
+/***/ 112:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -233,15 +233,15 @@ var _keys2 = _interopRequireDefault(_keys);
 
 exports.default = install;
 
-var _palette = __webpack_require__(112);
+var _palette = __webpack_require__(113);
 
 var _palette2 = _interopRequireDefault(_palette);
 
-var _rgba = __webpack_require__(113);
+var _rgba = __webpack_require__(114);
 
 var _rgba2 = _interopRequireDefault(_rgba);
 
-var _mdTheme = __webpack_require__(335);
+var _mdTheme = __webpack_require__(340);
 
 var _mdTheme2 = _interopRequireDefault(_mdTheme);
 
@@ -432,7 +432,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 112:
+/***/ 113:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -804,7 +804,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 113:
+/***/ 114:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -970,7 +970,7 @@ module.exports = function(bitmap, value){
 
 /***/ }),
 
-/***/ 176:
+/***/ 178:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1196,7 +1196,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 177:
+/***/ 179:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1277,7 +1277,7 @@ module.exports = function(key){
 
 /***/ }),
 
-/***/ 206:
+/***/ 208:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -1306,13 +1306,6 @@ module.exports = function(key){
 
 /***/ }),
 
-/***/ 227:
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ 23:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1321,6 +1314,13 @@ var defined = __webpack_require__(14);
 module.exports = function(it){
   return Object(defined(it));
 };
+
+/***/ }),
+
+/***/ 230:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -1366,7 +1366,7 @@ module.exports = function(it, S){
 
 /***/ }),
 
-/***/ 265:
+/***/ 269:
 /***/ (function(module, exports) {
 
 module.exports = ".THEME_NAME :not(input):not(textarea)::selection {\n  background: ACCENT-COLOR;\n  color: ACCENT-CONTRAST; }\n\n.THEME_NAME a:not(.md-button) {\n  color: ACCENT-COLOR; }\n  .THEME_NAME a:not(.md-button):hover {\n    color: ACCENT-COLOR-800; }\n\nbody.THEME_NAME {\n  background-color: BACKGROUND-COLOR;\n  color: BACKGROUND-CONTRAST-0.87; }\n\n/* Typography */\n.THEME_NAME .md-caption,\n.THEME_NAME .md-display-1,\n.THEME_NAME .md-display-2,\n.THEME_NAME .md-display-3,\n.THEME_NAME .md-display-4 {\n  color: BACKGROUND-CONTRAST-0.57; }\n\n.THEME_NAME code:not(.hljs) {\n  background-color: ACCENT-COLOR-A100-0.2;\n  color: ACCENT-COLOR-800; }\n"
@@ -1501,18 +1501,18 @@ module.exports = function(IS_INCLUDES){
 
 /***/ }),
 
-/***/ 334:
+/***/ 339:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(227)
+__webpack_require__(230)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(176),
+  __webpack_require__(178),
   /* template */
-  __webpack_require__(385),
+  __webpack_require__(391),
   /* scopeId */
   null,
   /* cssModules */
@@ -1540,12 +1540,12 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 335:
+/***/ 340:
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(177),
+  __webpack_require__(179),
   /* template */
   null,
   /* scopeId */
@@ -1594,7 +1594,7 @@ module.exports = { "default": __webpack_require__(42), __esModule: true };
 
 /***/ }),
 
-/***/ 385:
+/***/ 391:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -1633,10 +1633,10 @@ module.exports = __webpack_require__(4).Object.keys;
 
 /***/ }),
 
-/***/ 436:
+/***/ 443:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(106);
+module.exports = __webpack_require__(107);
 
 
 /***/ }),

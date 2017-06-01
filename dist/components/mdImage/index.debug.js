@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 417);
+/******/ 	return __webpack_require__(__webpack_require__.s = 423);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -132,7 +132,7 @@ module.exports = function normalizeComponent (
 
 /***/ }),
 
-/***/ 138:
+/***/ 139:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -218,32 +218,32 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 235:
+/***/ 238:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 249:
+/***/ 252:
 /***/ (function(module, exports) {
 
 module.exports = ""
 
 /***/ }),
 
-/***/ 295:
+/***/ 299:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(235)
+__webpack_require__(238)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(138),
+  __webpack_require__(139),
   /* template */
-  __webpack_require__(397),
+  __webpack_require__(403),
   /* scopeId */
   null,
   /* cssModules */
@@ -271,7 +271,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 397:
+/***/ 403:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -293,7 +293,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 417:
+/***/ 423:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(87);
@@ -365,11 +365,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = install;
 
-var _mdImage = __webpack_require__(295);
+var _mdImage = __webpack_require__(299);
 
 var _mdImage2 = _interopRequireDefault(_mdImage);
 
-var _mdImage3 = __webpack_require__(249);
+var _mdImage3 = __webpack_require__(252);
 
 var _mdImage4 = _interopRequireDefault(_mdImage3);
 

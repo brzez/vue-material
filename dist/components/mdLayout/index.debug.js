@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 419);
+/******/ 	return __webpack_require__(__webpack_require__.s = 425);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -132,7 +132,7 @@ module.exports = function normalizeComponent (
 
 /***/ }),
 
-/***/ 143:
+/***/ 144:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -284,23 +284,23 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 233:
+/***/ 236:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 300:
+/***/ 304:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(233)
+__webpack_require__(236)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(143),
+  __webpack_require__(144),
   /* template */
   null,
   /* scopeId */
@@ -329,7 +329,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 419:
+/***/ 425:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(89);
@@ -348,7 +348,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = install;
 
-var _mdLayout = __webpack_require__(300);
+var _mdLayout = __webpack_require__(304);
 
 var _mdLayout2 = _interopRequireDefault(_mdLayout);
 

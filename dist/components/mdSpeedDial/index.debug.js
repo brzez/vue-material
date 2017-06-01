@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 427);
+/******/ 	return __webpack_require__(__webpack_require__.s = 434);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -190,7 +190,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 159:
+/***/ 161:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -288,32 +288,32 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 222:
+/***/ 225:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 258:
+/***/ 262:
 /***/ (function(module, exports) {
 
 module.exports = ""
 
 /***/ }),
 
-/***/ 317:
+/***/ 322:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(222)
+__webpack_require__(225)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(159),
+  __webpack_require__(161),
   /* template */
-  __webpack_require__(373),
+  __webpack_require__(379),
   /* scopeId */
   null,
   /* cssModules */
@@ -341,7 +341,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 373:
+/***/ 379:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -360,15 +360,15 @@ if (false) {
 
 /***/ }),
 
-/***/ 427:
+/***/ 434:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(97);
+module.exports = __webpack_require__(98);
 
 
 /***/ }),
 
-/***/ 97:
+/***/ 98:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -379,11 +379,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = install;
 
-var _mdSpeedDial = __webpack_require__(317);
+var _mdSpeedDial = __webpack_require__(322);
 
 var _mdSpeedDial2 = _interopRequireDefault(_mdSpeedDial);
 
-var _mdSpeedDial3 = __webpack_require__(258);
+var _mdSpeedDial3 = __webpack_require__(262);
 
 var _mdSpeedDial4 = _interopRequireDefault(_mdSpeedDial3);
 
