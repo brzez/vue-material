@@ -211,7 +211,7 @@ var _mdInkRipple2 = _interopRequireDefault(_mdInkRipple);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function install(Vue) {
-  Vue.component('md-ink-ripple', _mdInkRipple2.default);
+  Vue.component('md-ink-ripple', window.mdInkRipple || _mdInkRipple2.default);
 }
 module.exports = exports['default'];
 
