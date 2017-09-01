@@ -4063,7 +4063,7 @@ img.md-icon {
     text-overflow: ellipsis;
 }
 .md-menu-backdrop {
-  z-index: 130;
+  z-index: 12;
 }
 /* Common */
 /* Responsive Breakpoints */
