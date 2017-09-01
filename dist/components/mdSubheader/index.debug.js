@@ -190,7 +190,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 100:
+/***/ 254:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -201,11 +201,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = install;
 
-var _mdSubheader = __webpack_require__(324);
+var _mdSubheader = __webpack_require__(360);
 
 var _mdSubheader2 = _interopRequireDefault(_mdSubheader);
 
-var _mdSubheader3 = __webpack_require__(264);
+var _mdSubheader3 = __webpack_require__(331);
 
 var _mdSubheader4 = _interopRequireDefault(_mdSubheader3);
 
@@ -220,7 +220,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 163:
+/***/ 282:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -255,32 +255,32 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 231:
+/***/ 315:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 264:
+/***/ 331:
 /***/ (function(module, exports) {
 
 module.exports = ".THEME_NAME.md-subheader.md-primary {\n  color: PRIMARY-COLOR; }\n\n.THEME_NAME.md-subheader.md-accent {\n  color: ACCENT-COLOR; }\n\n.THEME_NAME.md-subheader.md-warn {\n  color: WARN-COLOR; }\n"
 
 /***/ }),
 
-/***/ 324:
+/***/ 360:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(231)
+__webpack_require__(315)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(163),
+  __webpack_require__(282),
   /* template */
-  __webpack_require__(393),
+  __webpack_require__(406),
   /* scopeId */
   null,
   /* cssModules */
@@ -308,7 +308,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 393:
+/***/ 406:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -333,7 +333,7 @@ if (false) {
 /***/ 436:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(100);
+module.exports = __webpack_require__(254);
 
 
 /***/ })

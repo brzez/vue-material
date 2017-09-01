@@ -132,52 +132,25 @@ module.exports = function normalizeComponent (
 
 /***/ }),
 
-/***/ 119:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-//
-//
-//
-//
-//
-//
-
-exports.default = {
-  methods: {
-    close: function close() {
-      this.$emit('close');
-    }
-  }
-};
-module.exports = exports['default'];
-
-/***/ }),
-
-/***/ 241:
+/***/ 163:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 271:
+/***/ 176:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(241)
+__webpack_require__(163)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(119),
+  __webpack_require__(87),
   /* template */
-  __webpack_require__(407),
+  __webpack_require__(237),
   /* scopeId */
   null,
   /* cssModules */
@@ -205,7 +178,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 407:
+/***/ 237:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -233,12 +206,12 @@ if (false) {
 /***/ 412:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(76);
+module.exports = __webpack_require__(64);
 
 
 /***/ }),
 
-/***/ 76:
+/***/ 64:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -249,7 +222,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = install;
 
-var _mdBackdrop = __webpack_require__(271);
+var _mdBackdrop = __webpack_require__(176);
 
 var _mdBackdrop2 = _interopRequireDefault(_mdBackdrop);
 
@@ -258,6 +231,33 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function install(Vue) {
   Vue.component('md-backdrop', _mdBackdrop2.default);
 }
+module.exports = exports['default'];
+
+/***/ }),
+
+/***/ 87:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+//
+//
+//
+//
+//
+//
+
+exports.default = {
+  methods: {
+    close: function close() {
+      this.$emit('close');
+    }
+  }
+};
 module.exports = exports['default'];
 
 /***/ })

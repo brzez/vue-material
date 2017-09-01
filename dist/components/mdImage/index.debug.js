@@ -132,7 +132,37 @@ module.exports = function normalizeComponent (
 
 /***/ }),
 
-/***/ 139:
+/***/ 247:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = install;
+
+var _mdImage = __webpack_require__(353);
+
+var _mdImage2 = _interopRequireDefault(_mdImage);
+
+var _mdImage3 = __webpack_require__(325);
+
+var _mdImage4 = _interopRequireDefault(_mdImage3);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function install(Vue) {
+  Vue.component('md-image', _mdImage2.default);
+
+  Vue.material.styles.push(_mdImage4.default);
+}
+module.exports = exports['default'];
+
+/***/ }),
+
+/***/ 275:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -142,7 +172,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _getImageLightness = __webpack_require__(58);
+var _getImageLightness = __webpack_require__(85);
 
 var _getImageLightness2 = _interopRequireDefault(_getImageLightness);
 
@@ -218,32 +248,32 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 238:
+/***/ 318:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 252:
+/***/ 325:
 /***/ (function(module, exports) {
 
 module.exports = ""
 
 /***/ }),
 
-/***/ 299:
+/***/ 353:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(238)
+__webpack_require__(318)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(139),
+  __webpack_require__(275),
   /* template */
-  __webpack_require__(403),
+  __webpack_require__(410),
   /* scopeId */
   null,
   /* cssModules */
@@ -271,7 +301,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 403:
+/***/ 410:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -296,12 +326,12 @@ if (false) {
 /***/ 423:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(87);
+module.exports = __webpack_require__(247);
 
 
 /***/ }),
 
-/***/ 58:
+/***/ 85:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -350,36 +380,6 @@ var getImageLightness = function getImageLightness(image, onLoad, onError) {
 };
 
 exports.default = getImageLightness;
-module.exports = exports['default'];
-
-/***/ }),
-
-/***/ 87:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = install;
-
-var _mdImage = __webpack_require__(299);
-
-var _mdImage2 = _interopRequireDefault(_mdImage);
-
-var _mdImage3 = __webpack_require__(252);
-
-var _mdImage4 = _interopRequireDefault(_mdImage3);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function install(Vue) {
-  Vue.component('md-image', _mdImage2.default);
-
-  Vue.material.styles.push(_mdImage4.default);
-}
 module.exports = exports['default'];
 
 /***/ })

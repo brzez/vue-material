@@ -190,7 +190,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 162:
+/***/ 111:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -268,32 +268,32 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 212:
+/***/ 151:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 263:
+/***/ 173:
 /***/ (function(module, exports) {
 
 module.exports = ".THEME_NAME.md-spinner .md-spinner-path {\n  stroke: PRIMARY-COLOR; }\n\n.THEME_NAME.md-spinner.md-accent .md-spinner-path {\n  stroke: ACCENT-COLOR; }\n\n.THEME_NAME.md-spinner.md-warn .md-spinner-path {\n  stroke: WARN-COLOR; }\n"
 
 /***/ }),
 
-/***/ 323:
+/***/ 204:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(212)
+__webpack_require__(151)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(162),
+  __webpack_require__(111),
   /* template */
-  __webpack_require__(352),
+  __webpack_require__(209),
   /* scopeId */
   null,
   /* cssModules */
@@ -321,7 +321,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 352:
+/***/ 209:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -363,12 +363,12 @@ if (false) {
 /***/ 435:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(99);
+module.exports = __webpack_require__(74);
 
 
 /***/ }),
 
-/***/ 99:
+/***/ 74:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -379,11 +379,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = install;
 
-var _mdSpinner = __webpack_require__(323);
+var _mdSpinner = __webpack_require__(204);
 
 var _mdSpinner2 = _interopRequireDefault(_mdSpinner);
 
-var _mdSpinner3 = __webpack_require__(263);
+var _mdSpinner3 = __webpack_require__(173);
 
 var _mdSpinner4 = _interopRequireDefault(_mdSpinner3);
 

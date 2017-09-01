@@ -190,7 +190,42 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 131:
+/***/ 244:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = install;
+
+var _mdChips = __webpack_require__(350);
+
+var _mdChips2 = _interopRequireDefault(_mdChips);
+
+var _mdChip = __webpack_require__(349);
+
+var _mdChip2 = _interopRequireDefault(_mdChip);
+
+var _mdChips3 = __webpack_require__(323);
+
+var _mdChips4 = _interopRequireDefault(_mdChips3);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function install(Vue) {
+  Vue.component('md-chips', _mdChips2.default);
+  Vue.component('md-chip', _mdChip2.default);
+
+  Vue.material.styles.push(_mdChips4.default);
+}
+module.exports = exports['default'];
+
+/***/ }),
+
+/***/ 272:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -240,7 +275,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 132:
+/***/ 273:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -254,7 +289,7 @@ var _mixin = __webpack_require__(1);
 
 var _mixin2 = _interopRequireDefault(_mixin);
 
-var _uniqueId = __webpack_require__(41);
+var _uniqueId = __webpack_require__(49);
 
 var _uniqueId2 = _interopRequireDefault(_uniqueId);
 
@@ -375,28 +410,28 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 228:
+/***/ 313:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 248:
+/***/ 323:
 /***/ (function(module, exports) {
 
 module.exports = ".THEME_NAME.md-chip {\n  background-color: BACKGROUND-CONTRAST-0.12; }\n  .THEME_NAME.md-chip.md-deletable:hover, .THEME_NAME.md-chip.md-deletable:focus {\n    background-color: BACKGROUND-CONTRAST-0.54;\n    color: BACKGROUND-COLOR; }\n    .THEME_NAME.md-chip.md-deletable:hover .md-delete, .THEME_NAME.md-chip.md-deletable:focus .md-delete {\n      color: BACKGROUND-COLOR; }\n  .THEME_NAME.md-chip .md-delete {\n    color: BACKGROUND-CONTRAST-0.38; }\n    .THEME_NAME.md-chip .md-delete .md-ripple {\n      color: BACKGROUND-COLOR; }\n"
 
 /***/ }),
 
-/***/ 287:
+/***/ 349:
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(131),
+  __webpack_require__(272),
   /* template */
-  __webpack_require__(365),
+  __webpack_require__(389),
   /* scopeId */
   null,
   /* cssModules */
@@ -424,18 +459,18 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 288:
+/***/ 350:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(228)
+__webpack_require__(313)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(132),
+  __webpack_require__(273),
   /* template */
-  __webpack_require__(383),
+  __webpack_require__(400),
   /* scopeId */
   null,
   /* cssModules */
@@ -463,7 +498,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 365:
+/***/ 389:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -501,7 +536,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 383:
+/***/ 400:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -577,7 +612,15 @@ if (false) {
 
 /***/ }),
 
-/***/ 41:
+/***/ 418:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(244);
+
+
+/***/ }),
+
+/***/ 49:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -592,49 +635,6 @@ var uniqueId = function uniqueId() {
 
 exports.default = uniqueId;
 module.exports = exports["default"];
-
-/***/ }),
-
-/***/ 418:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(82);
-
-
-/***/ }),
-
-/***/ 82:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = install;
-
-var _mdChips = __webpack_require__(288);
-
-var _mdChips2 = _interopRequireDefault(_mdChips);
-
-var _mdChip = __webpack_require__(287);
-
-var _mdChip2 = _interopRequireDefault(_mdChip);
-
-var _mdChips3 = __webpack_require__(248);
-
-var _mdChips4 = _interopRequireDefault(_mdChips3);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function install(Vue) {
-  Vue.component('md-chips', _mdChips2.default);
-  Vue.component('md-chip', _mdChip2.default);
-
-  Vue.material.styles.push(_mdChips4.default);
-}
-module.exports = exports['default'];
 
 /***/ })
 

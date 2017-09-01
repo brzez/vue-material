@@ -190,7 +190,37 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 118:
+/***/ 240:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = install;
+
+var _mdAvatar = __webpack_require__(335);
+
+var _mdAvatar2 = _interopRequireDefault(_mdAvatar);
+
+var _mdAvatar3 = __webpack_require__(319);
+
+var _mdAvatar4 = _interopRequireDefault(_mdAvatar3);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function install(Vue) {
+  Vue.component('md-avatar', _mdAvatar2.default);
+
+  Vue.material.styles.push(_mdAvatar4.default);
+}
+module.exports = exports['default'];
+
+/***/ }),
+
+/***/ 262:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -221,32 +251,32 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 224:
+/***/ 309:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 242:
+/***/ 319:
 /***/ (function(module, exports) {
 
 module.exports = ".THEME_NAME.md-avatar.md-primary.md-avatar-icon {\n  background-color: PRIMARY-COLOR; }\n  .THEME_NAME.md-avatar.md-primary.md-avatar-icon .md-icon {\n    color: PRIMARY-CONTRAST-0.99999; }\n\n.THEME_NAME.md-avatar.md-accent.md-avatar-icon {\n  background-color: ACCENT-COLOR; }\n  .THEME_NAME.md-avatar.md-accent.md-avatar-icon .md-icon {\n    color: ACCENT-CONTRAST-0.99999; }\n\n.THEME_NAME.md-avatar.md-warn.md-avatar-icon {\n  background-color: WARN-COLOR; }\n  .THEME_NAME.md-avatar.md-warn.md-avatar-icon .md-icon {\n    color: WARN-CONTRAST-0.99999; }\n"
 
 /***/ }),
 
-/***/ 270:
+/***/ 335:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(224)
+__webpack_require__(309)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(118),
+  __webpack_require__(262),
   /* template */
-  __webpack_require__(378),
+  __webpack_require__(395),
   /* scopeId */
   null,
   /* cssModules */
@@ -274,7 +304,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 378:
+/***/ 395:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -296,38 +326,8 @@ if (false) {
 /***/ 411:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(75);
+module.exports = __webpack_require__(240);
 
-
-/***/ }),
-
-/***/ 75:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = install;
-
-var _mdAvatar = __webpack_require__(270);
-
-var _mdAvatar2 = _interopRequireDefault(_mdAvatar);
-
-var _mdAvatar3 = __webpack_require__(242);
-
-var _mdAvatar4 = _interopRequireDefault(_mdAvatar3);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function install(Vue) {
-  Vue.component('md-avatar', _mdAvatar2.default);
-
-  Vue.material.styles.push(_mdAvatar4.default);
-}
-module.exports = exports['default'];
 
 /***/ })
 

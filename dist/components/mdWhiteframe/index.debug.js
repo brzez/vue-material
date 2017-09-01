@@ -132,7 +132,7 @@ module.exports = function normalizeComponent (
 
 /***/ }),
 
-/***/ 106:
+/***/ 259:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -143,7 +143,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = install;
 
-var _mdWhiteframe = __webpack_require__(338);
+var _mdWhiteframe = __webpack_require__(373);
 
 var _mdWhiteframe2 = _interopRequireDefault(_mdWhiteframe);
 
@@ -156,7 +156,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 177:
+/***/ 295:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -205,23 +205,23 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 222:
+/***/ 307:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 338:
+/***/ 373:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(222)
+__webpack_require__(307)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(177),
+  __webpack_require__(295),
   /* template */
   null,
   /* scopeId */
@@ -253,7 +253,7 @@ module.exports = Component.exports
 /***/ 442:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(106);
+module.exports = __webpack_require__(259);
 
 
 /***/ })

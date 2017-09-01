@@ -190,7 +190,37 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 156:
+/***/ 251:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = install;
+
+var _mdRatingBar = __webpack_require__(357);
+
+var _mdRatingBar2 = _interopRequireDefault(_mdRatingBar);
+
+var _mdRatingBar3 = __webpack_require__(328);
+
+var _mdRatingBar4 = _interopRequireDefault(_mdRatingBar3);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function install(Vue) {
+  Vue.component('md-rating-bar', _mdRatingBar2.default);
+
+  Vue.material.styles.push(_mdRatingBar4.default);
+}
+module.exports = exports['default'];
+
+/***/ }),
+
+/***/ 279:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -385,32 +415,32 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 223:
+/***/ 308:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 258:
+/***/ 328:
 /***/ (function(module, exports) {
 
 module.exports = ".THEME_NAME.md-rating-bar > .md-empty-icon .md-icon {\n  color: BACKGROUND-CONTRAST-0.26; }\n\n.THEME_NAME.md-rating-bar > .md-full-icon .md-icon {\n  color: BACKGROUND-CONTRAST-0.38; }\n\n.THEME_NAME.md-rating-bar.md-primary > .md-full-icon .md-icon {\n  color: PRIMARY-COLOR; }\n\n.THEME_NAME.md-rating-bar.md-accent > .md-full-icon .md-icon {\n  color: ACCENT-COLOR; }\n\n.THEME_NAME.md-rating-bar.md-warn > .md-full-icon .md-icon {\n  color: WARN-COLOR; }\n"
 
 /***/ }),
 
-/***/ 317:
+/***/ 357:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(223)
+__webpack_require__(308)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(156),
+  __webpack_require__(279),
   /* template */
-  __webpack_require__(376),
+  __webpack_require__(394),
   /* scopeId */
   null,
   /* cssModules */
@@ -438,7 +468,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 376:
+/***/ 394:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -551,38 +581,8 @@ if (false) {
 /***/ 430:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(94);
+module.exports = __webpack_require__(251);
 
-
-/***/ }),
-
-/***/ 94:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = install;
-
-var _mdRatingBar = __webpack_require__(317);
-
-var _mdRatingBar2 = _interopRequireDefault(_mdRatingBar);
-
-var _mdRatingBar3 = __webpack_require__(258);
-
-var _mdRatingBar4 = _interopRequireDefault(_mdRatingBar3);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function install(Vue) {
-  Vue.component('md-rating-bar', _mdRatingBar2.default);
-
-  Vue.material.styles.push(_mdRatingBar4.default);
-}
-module.exports = exports['default'];
 
 /***/ })
 

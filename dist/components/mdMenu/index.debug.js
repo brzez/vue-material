@@ -132,91 +132,7 @@ module.exports = function normalizeComponent (
 
 /***/ }),
 
-/***/ 10:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var getClosestVueParent = function getClosestVueParent($parent, cssClass) {
-  if (!$parent || !$parent.$el) {
-    return false;
-  }
-
-  if ($parent._uid === 0) {
-    return false;
-  }
-
-  if ($parent.$el.classList.contains(cssClass)) {
-    return $parent;
-  }
-
-  return getClosestVueParent($parent.$parent, cssClass);
-};
-
-exports.default = getClosestVueParent;
-module.exports = exports["default"];
-
-/***/ }),
-
-/***/ 116:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var margin = 8;
-
-var isAboveOfViewport = function isAboveOfViewport(element, position) {
-  return position.top <= margin - parseInt(getComputedStyle(element).marginTop, 10);
-};
-
-var isBelowOfViewport = function isBelowOfViewport(element, position) {
-  return position.top + element.offsetHeight + margin >= window.innerHeight - parseInt(getComputedStyle(element).marginTop, 10);
-};
-
-var isOnTheLeftOfViewport = function isOnTheLeftOfViewport(element, position) {
-  return position.left <= margin - parseInt(getComputedStyle(element).marginLeft, 10);
-};
-
-var isOnTheRightOfViewport = function isOnTheRightOfViewport(element, position) {
-  return position.left + element.offsetWidth + margin >= window.innerWidth - parseInt(getComputedStyle(element).marginLeft, 10);
-};
-
-var getInViewPosition = function getInViewPosition(element, position) {
-  var computedStyle = getComputedStyle(element);
-
-  if (isAboveOfViewport(element, position)) {
-    position.top = margin - parseInt(computedStyle.marginTop, 10);
-  }
-
-  if (isOnTheLeftOfViewport(element, position)) {
-    position.left = margin - parseInt(computedStyle.marginLeft, 10);
-  }
-
-  if (isOnTheRightOfViewport(element, position)) {
-    position.left = window.innerWidth - margin - element.offsetWidth - parseInt(computedStyle.marginLeft, 10);
-  }
-
-  if (isBelowOfViewport(element, position)) {
-    position.top = window.innerHeight - margin - element.offsetHeight - parseInt(computedStyle.marginTop, 10);
-  }
-
-  return position;
-};
-
-exports.default = getInViewPosition;
-module.exports = exports["default"];
-
-/***/ }),
-
-/***/ 151:
+/***/ 105:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -230,7 +146,7 @@ var _transitionEndEventName = __webpack_require__(37);
 
 var _transitionEndEventName2 = _interopRequireDefault(_transitionEndEventName);
 
-var _getInViewPosition = __webpack_require__(116);
+var _getInViewPosition = __webpack_require__(86);
 
 var _getInViewPosition2 = _interopRequireDefault(_getInViewPosition);
 
@@ -442,7 +358,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 152:
+/***/ 106:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -519,7 +435,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 153:
+/***/ 107:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -529,11 +445,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _getClosestVueParent = __webpack_require__(10);
+var _getClosestVueParent = __webpack_require__(15);
 
 var _getClosestVueParent2 = _interopRequireDefault(_getClosestVueParent);
 
-__webpack_require__(207);
+__webpack_require__(149);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -621,7 +537,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 207:
+/***/ 149:
 /***/ (function(module, exports) {
 
 if (!Element.prototype.scrollIntoViewIfNeeded) {
@@ -654,32 +570,62 @@ if (!Element.prototype.scrollIntoViewIfNeeded) {
 
 /***/ }),
 
-/***/ 240:
+/***/ 15:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var getClosestVueParent = function getClosestVueParent($parent, cssClass) {
+  if (!$parent || !$parent.$el) {
+    return false;
+  }
+
+  if ($parent._uid === 0) {
+    return false;
+  }
+
+  if ($parent.$el.classList.contains(cssClass)) {
+    return $parent;
+  }
+
+  return getClosestVueParent($parent.$parent, cssClass);
+};
+
+exports.default = getClosestVueParent;
+module.exports = exports["default"];
+
+/***/ }),
+
+/***/ 162:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 255:
+/***/ 170:
 /***/ (function(module, exports) {
 
 module.exports = ".THEME_NAME.md-menu-content .md-list {\n  background-color: BACKGROUND-COLOR;\n  color: BACKGROUND-CONTRAST; }\n  .THEME_NAME.md-menu-content .md-list .md-menu-item:hover .md-button:not([disabled]), .THEME_NAME.md-menu-content .md-list .md-menu-item:focus .md-button:not([disabled]), .THEME_NAME.md-menu-content .md-list .md-menu-item.md-highlighted .md-button:not([disabled]) {\n    background-color: BACKGROUND-CONTRAST-0.12; }\n  .THEME_NAME.md-menu-content .md-list .md-menu-item[disabled] {\n    color: BACKGROUND-CONTRAST-0.38; }\n"
 
 /***/ }),
 
-/***/ 312:
+/***/ 198:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(240)
+__webpack_require__(162)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(151),
+  __webpack_require__(105),
   /* template */
-  __webpack_require__(405),
+  __webpack_require__(235),
   /* scopeId */
   null,
   /* cssModules */
@@ -707,14 +653,14 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 313:
+/***/ 199:
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(152),
+  __webpack_require__(106),
   /* template */
-  __webpack_require__(398),
+  __webpack_require__(230),
   /* scopeId */
   null,
   /* cssModules */
@@ -742,14 +688,14 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 314:
+/***/ 200:
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(153),
+  __webpack_require__(107),
   /* template */
-  __webpack_require__(354),
+  __webpack_require__(210),
   /* scopeId */
   null,
   /* cssModules */
@@ -777,7 +723,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 354:
+/***/ 210:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -806,37 +752,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 37:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-function transitionEndEventName() {
-  var el = document.createElement('span');
-  var transitions = {
-    transition: 'transitionend',
-    OTransition: 'oTransitionEnd',
-    MozTransition: 'transitionend',
-    WebkitTransition: 'webkitTransitionEnd'
-  };
-
-  for (var transition in transitions) {
-    if (el.style[transition] !== undefined) {
-      return transitions[transition];
-    }
-  }
-}
-
-exports.default = transitionEndEventName();
-module.exports = exports['default'];
-
-/***/ }),
-
-/***/ 398:
+/***/ 230:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -884,7 +800,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 405:
+/***/ 235:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -908,15 +824,45 @@ if (false) {
 
 /***/ }),
 
+/***/ 37:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+function transitionEndEventName() {
+  var el = document.createElement('span');
+  var transitions = {
+    transition: 'transitionend',
+    OTransition: 'oTransitionEnd',
+    MozTransition: 'transitionend',
+    WebkitTransition: 'webkitTransitionEnd'
+  };
+
+  for (var transition in transitions) {
+    if (el.style[transition] !== undefined) {
+      return transitions[transition];
+    }
+  }
+}
+
+exports.default = transitionEndEventName();
+module.exports = exports['default'];
+
+/***/ }),
+
 /***/ 427:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(91);
+module.exports = __webpack_require__(71);
 
 
 /***/ }),
 
-/***/ 91:
+/***/ 71:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -927,19 +873,19 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = install;
 
-var _mdMenu = __webpack_require__(312);
+var _mdMenu = __webpack_require__(198);
 
 var _mdMenu2 = _interopRequireDefault(_mdMenu);
 
-var _mdMenuItem = __webpack_require__(314);
+var _mdMenuItem = __webpack_require__(200);
 
 var _mdMenuItem2 = _interopRequireDefault(_mdMenuItem);
 
-var _mdMenuContent = __webpack_require__(313);
+var _mdMenuContent = __webpack_require__(199);
 
 var _mdMenuContent2 = _interopRequireDefault(_mdMenuContent);
 
-var _mdMenu3 = __webpack_require__(255);
+var _mdMenu3 = __webpack_require__(170);
 
 var _mdMenu4 = _interopRequireDefault(_mdMenu3);
 
@@ -953,6 +899,60 @@ function install(Vue) {
   Vue.material.styles.push(_mdMenu4.default);
 }
 module.exports = exports['default'];
+
+/***/ }),
+
+/***/ 86:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var margin = 8;
+
+var isAboveOfViewport = function isAboveOfViewport(element, position) {
+  return position.top <= margin - parseInt(getComputedStyle(element).marginTop, 10);
+};
+
+var isBelowOfViewport = function isBelowOfViewport(element, position) {
+  return position.top + element.offsetHeight + margin >= window.innerHeight - parseInt(getComputedStyle(element).marginTop, 10);
+};
+
+var isOnTheLeftOfViewport = function isOnTheLeftOfViewport(element, position) {
+  return position.left <= margin - parseInt(getComputedStyle(element).marginLeft, 10);
+};
+
+var isOnTheRightOfViewport = function isOnTheRightOfViewport(element, position) {
+  return position.left + element.offsetWidth + margin >= window.innerWidth - parseInt(getComputedStyle(element).marginLeft, 10);
+};
+
+var getInViewPosition = function getInViewPosition(element, position) {
+  var computedStyle = getComputedStyle(element);
+
+  if (isAboveOfViewport(element, position)) {
+    position.top = margin - parseInt(computedStyle.marginTop, 10);
+  }
+
+  if (isOnTheLeftOfViewport(element, position)) {
+    position.left = margin - parseInt(computedStyle.marginLeft, 10);
+  }
+
+  if (isOnTheRightOfViewport(element, position)) {
+    position.left = window.innerWidth - margin - element.offsetWidth - parseInt(computedStyle.marginLeft, 10);
+  }
+
+  if (isBelowOfViewport(element, position)) {
+    position.top = window.innerHeight - margin - element.offsetHeight - parseInt(computedStyle.marginTop, 10);
+  }
+
+  return position;
+};
+
+exports.default = getInViewPosition;
+module.exports = exports["default"];
 
 /***/ })
 

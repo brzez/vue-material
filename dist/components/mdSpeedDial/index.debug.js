@@ -190,7 +190,37 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 161:
+/***/ 253:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = install;
+
+var _mdSpeedDial = __webpack_require__(359);
+
+var _mdSpeedDial2 = _interopRequireDefault(_mdSpeedDial);
+
+var _mdSpeedDial3 = __webpack_require__(330);
+
+var _mdSpeedDial4 = _interopRequireDefault(_mdSpeedDial3);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function install(Vue) {
+  Vue.component('md-speed-dial', _mdSpeedDial2.default);
+
+  Vue.material.styles.push(_mdSpeedDial4.default);
+}
+module.exports = exports['default'];
+
+/***/ }),
+
+/***/ 281:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -288,32 +318,32 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 225:
+/***/ 310:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 262:
+/***/ 330:
 /***/ (function(module, exports) {
 
 module.exports = ""
 
 /***/ }),
 
-/***/ 322:
+/***/ 359:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(225)
+__webpack_require__(310)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(161),
+  __webpack_require__(281),
   /* template */
-  __webpack_require__(379),
+  __webpack_require__(396),
   /* scopeId */
   null,
   /* cssModules */
@@ -341,7 +371,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 379:
+/***/ 396:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -363,38 +393,8 @@ if (false) {
 /***/ 434:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(98);
+module.exports = __webpack_require__(253);
 
-
-/***/ }),
-
-/***/ 98:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = install;
-
-var _mdSpeedDial = __webpack_require__(322);
-
-var _mdSpeedDial2 = _interopRequireDefault(_mdSpeedDial);
-
-var _mdSpeedDial3 = __webpack_require__(262);
-
-var _mdSpeedDial4 = _interopRequireDefault(_mdSpeedDial3);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function install(Vue) {
-  Vue.component('md-speed-dial', _mdSpeedDial2.default);
-
-  Vue.material.styles.push(_mdSpeedDial4.default);
-}
-module.exports = exports['default'];
 
 /***/ })
 

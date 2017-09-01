@@ -190,7 +190,42 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 120:
+/***/ 241:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = install;
+
+var _mdBottomBar = __webpack_require__(336);
+
+var _mdBottomBar2 = _interopRequireDefault(_mdBottomBar);
+
+var _mdBottomBarItem = __webpack_require__(337);
+
+var _mdBottomBarItem2 = _interopRequireDefault(_mdBottomBarItem);
+
+var _mdBottomBar3 = __webpack_require__(320);
+
+var _mdBottomBar4 = _interopRequireDefault(_mdBottomBar3);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function install(Vue) {
+  Vue.component('md-bottom-bar', _mdBottomBar2.default);
+  Vue.component('md-bottom-bar-item', _mdBottomBarItem2.default);
+
+  Vue.material.styles.push(_mdBottomBar4.default);
+}
+module.exports = exports['default'];
+
+/***/ }),
+
+/***/ 263:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -240,7 +275,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 121:
+/***/ 264:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -324,32 +359,32 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 213:
+/***/ 302:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 243:
+/***/ 320:
 /***/ (function(module, exports) {
 
 module.exports = ".THEME_NAME.md-bottom-bar.md-fixed {\n  background-color: BACKGROUND-COLOR; }\n  .THEME_NAME.md-bottom-bar.md-fixed .md-bottom-bar-item {\n    color: BACKGROUND-CONTRAST-0.54; }\n    .THEME_NAME.md-bottom-bar.md-fixed .md-bottom-bar-item:hover:not([disabled]):not(.md-active) {\n      color: BACKGROUND-CONTRAST-0.87; }\n    .THEME_NAME.md-bottom-bar.md-fixed .md-bottom-bar-item.md-active {\n      color: PRIMARY-COLOR; }\n  .THEME_NAME.md-bottom-bar.md-fixed.md-accent .md-bottom-bar-item.md-active {\n    color: ACCENT-COLOR; }\n  .THEME_NAME.md-bottom-bar.md-fixed.md-warn .md-bottom-bar-item.md-active {\n    color: WARN-COLOR; }\n  .THEME_NAME.md-bottom-bar.md-fixed.md-transparent .md-bottom-bar-item.md-active {\n    color: BACKGROUND-CONTRAST; }\n\n.THEME_NAME.md-bottom-bar.md-shift {\n  background-color: PRIMARY-COLOR;\n  color: PRIMARY-CONTRAST; }\n  .THEME_NAME.md-bottom-bar.md-shift .md-bottom-bar-item {\n    color: PRIMARY-CONTRAST-0.54; }\n    .THEME_NAME.md-bottom-bar.md-shift .md-bottom-bar-item:hover:not([disabled]):not(.md-active) {\n      color: PRIMARY-CONTRAST-0.87; }\n    .THEME_NAME.md-bottom-bar.md-shift .md-bottom-bar-item.md-active {\n      color: PRIMARY-CONTRAST; }\n  .THEME_NAME.md-bottom-bar.md-shift.md-accent {\n    background-color: ACCENT-COLOR; }\n    .THEME_NAME.md-bottom-bar.md-shift.md-accent .md-bottom-bar-item {\n      color: ACCENT-CONTRAST-0.54; }\n      .THEME_NAME.md-bottom-bar.md-shift.md-accent .md-bottom-bar-item:hover:not([disabled]):not(.md-active) {\n        color: ACCENT-CONTRAST-0.87; }\n      .THEME_NAME.md-bottom-bar.md-shift.md-accent .md-bottom-bar-item.md-active {\n        color: ACCENT-CONTRAST; }\n  .THEME_NAME.md-bottom-bar.md-shift.md-warn {\n    background-color: WARN-COLOR; }\n    .THEME_NAME.md-bottom-bar.md-shift.md-warn .md-bottom-bar-item {\n      color: WARN-CONTRAST-0.54; }\n      .THEME_NAME.md-bottom-bar.md-shift.md-warn .md-bottom-bar-item:hover:not([disabled]):not(.md-active) {\n        color: WARN-CONTRAST-0.87; }\n      .THEME_NAME.md-bottom-bar.md-shift.md-warn .md-bottom-bar-item.md-active {\n        color: WARN-CONTRAST; }\n  .THEME_NAME.md-bottom-bar.md-shift.md-transparent {\n    background-color: transparent; }\n    .THEME_NAME.md-bottom-bar.md-shift.md-transparent .md-bottom-bar-item {\n      color: BACKGROUND-CONTRAST-0.54; }\n      .THEME_NAME.md-bottom-bar.md-shift.md-transparent .md-bottom-bar-item:hover:not([disabled]):not(.md-active) {\n        color: BACKGROUND-CONTRAST-0.87; }\n      .THEME_NAME.md-bottom-bar.md-shift.md-transparent .md-bottom-bar-item.md-active {\n        color: BACKGROUND-CONTRAST; }\n"
 
 /***/ }),
 
-/***/ 272:
+/***/ 336:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(213)
+__webpack_require__(302)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(120),
+  __webpack_require__(263),
   /* template */
-  __webpack_require__(355),
+  __webpack_require__(385),
   /* scopeId */
   null,
   /* cssModules */
@@ -377,14 +412,14 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 273:
+/***/ 337:
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(121),
+  __webpack_require__(264),
   /* template */
-  __webpack_require__(357),
+  __webpack_require__(386),
   /* scopeId */
   null,
   /* cssModules */
@@ -412,7 +447,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 355:
+/***/ 385:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -431,7 +466,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 357:
+/***/ 386:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -492,43 +527,8 @@ if (false) {
 /***/ 413:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(77);
+module.exports = __webpack_require__(241);
 
-
-/***/ }),
-
-/***/ 77:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = install;
-
-var _mdBottomBar = __webpack_require__(272);
-
-var _mdBottomBar2 = _interopRequireDefault(_mdBottomBar);
-
-var _mdBottomBarItem = __webpack_require__(273);
-
-var _mdBottomBarItem2 = _interopRequireDefault(_mdBottomBarItem);
-
-var _mdBottomBar3 = __webpack_require__(243);
-
-var _mdBottomBar4 = _interopRequireDefault(_mdBottomBar3);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function install(Vue) {
-  Vue.component('md-bottom-bar', _mdBottomBar2.default);
-  Vue.component('md-bottom-bar-item', _mdBottomBarItem2.default);
-
-  Vue.material.styles.push(_mdBottomBar4.default);
-}
-module.exports = exports['default'];
 
 /***/ })
 

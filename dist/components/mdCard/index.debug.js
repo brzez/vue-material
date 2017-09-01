@@ -190,7 +190,82 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 124:
+/***/ 243:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = install;
+
+var _mdCard = __webpack_require__(339);
+
+var _mdCard2 = _interopRequireDefault(_mdCard);
+
+var _mdCardMedia = __webpack_require__(346);
+
+var _mdCardMedia2 = _interopRequireDefault(_mdCardMedia);
+
+var _mdCardMediaCover = __webpack_require__(348);
+
+var _mdCardMediaCover2 = _interopRequireDefault(_mdCardMediaCover);
+
+var _mdCardMediaActions = __webpack_require__(347);
+
+var _mdCardMediaActions2 = _interopRequireDefault(_mdCardMediaActions);
+
+var _mdCardHeader = __webpack_require__(344);
+
+var _mdCardHeader2 = _interopRequireDefault(_mdCardHeader);
+
+var _mdCardHeaderText = __webpack_require__(345);
+
+var _mdCardHeaderText2 = _interopRequireDefault(_mdCardHeaderText);
+
+var _mdCardContent = __webpack_require__(342);
+
+var _mdCardContent2 = _interopRequireDefault(_mdCardContent);
+
+var _mdCardActions = __webpack_require__(340);
+
+var _mdCardActions2 = _interopRequireDefault(_mdCardActions);
+
+var _mdCardArea = __webpack_require__(341);
+
+var _mdCardArea2 = _interopRequireDefault(_mdCardArea);
+
+var _mdCardExpand = __webpack_require__(343);
+
+var _mdCardExpand2 = _interopRequireDefault(_mdCardExpand);
+
+var _mdCard3 = __webpack_require__(322);
+
+var _mdCard4 = _interopRequireDefault(_mdCard3);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function install(Vue) {
+  Vue.component('md-card', _mdCard2.default);
+  Vue.component('md-card-media', _mdCardMedia2.default);
+  Vue.component('md-card-media-cover', _mdCardMediaCover2.default);
+  Vue.component('md-card-media-actions', _mdCardMediaActions2.default);
+  Vue.component('md-card-header', _mdCardHeader2.default);
+  Vue.component('md-card-header-text', _mdCardHeaderText2.default);
+  Vue.component('md-card-content', _mdCardContent2.default);
+  Vue.component('md-card-actions', _mdCardActions2.default);
+  Vue.component('md-card-area', _mdCardArea2.default);
+  Vue.component('md-card-expand', _mdCardExpand2.default);
+
+  Vue.material.styles.push(_mdCard4.default);
+}
+module.exports = exports['default'];
+
+/***/ }),
+
+/***/ 266:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -231,7 +306,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 125:
+/***/ 267:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -263,7 +338,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 126:
+/***/ 268:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -317,7 +392,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 127:
+/***/ 269:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -350,7 +425,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 128:
+/***/ 270:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -395,7 +470,7 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 129:
+/***/ 271:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -405,7 +480,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _getImageLightness = __webpack_require__(58);
+var _getImageLightness = __webpack_require__(85);
 
 var _getImageLightness2 = _interopRequireDefault(_getImageLightness);
 
@@ -488,32 +563,32 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 214:
+/***/ 303:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 246:
+/***/ 322:
 /***/ (function(module, exports) {
 
 module.exports = ".THEME_NAME.md-card {\n  background-color: BACKGROUND-COLOR; }\n  .THEME_NAME.md-card.md-primary {\n    background-color: PRIMARY-COLOR;\n    color: PRIMARY-CONTRAST; }\n    .THEME_NAME.md-card.md-primary .md-card-header .md-icon-button:not(.md-primary):not(.md-warn):not(.md-accent) .md-icon,\n    .THEME_NAME.md-card.md-primary .md-card-actions .md-icon-button:not(.md-primary):not(.md-warn):not(.md-accent) .md-icon {\n      color: PRIMARY-CONTRAST-0.87; }\n    .THEME_NAME.md-card.md-primary .md-input-container.md-input-focused input,\n    .THEME_NAME.md-card.md-primary .md-input-container.md-input-focused textarea {\n      color: PRIMARY-CONTRAST;\n      text-shadow: 0 0 0 PRIMARY-CONTRAST; }\n    .THEME_NAME.md-card.md-primary .md-input-container.md-input-focused label,\n    .THEME_NAME.md-card.md-primary .md-input-container.md-input-focused .md-icon:not(.md-icon-delete) {\n      color: PRIMARY-CONTRAST; }\n    .THEME_NAME.md-card.md-primary .md-input-container:after {\n      background-color: PRIMARY-CONTRAST; }\n    .THEME_NAME.md-card.md-primary .md-input-container input,\n    .THEME_NAME.md-card.md-primary .md-input-container textarea {\n      color: PRIMARY-CONTRAST;\n      text-shadow: 0 0 0 PRIMARY-CONTRAST; }\n      .THEME_NAME.md-card.md-primary .md-input-container input::-webkit-input-placeholder,\n      .THEME_NAME.md-card.md-primary .md-input-container textarea::-webkit-input-placeholder {\n        color: PRIMARY-CONTRAST-0.54; }\n    .THEME_NAME.md-card.md-primary .md-input-container label,\n    .THEME_NAME.md-card.md-primary .md-input-container .md-icon:not(.md-icon-delete) {\n      color: PRIMARY-CONTRAST; }\n  .THEME_NAME.md-card.md-accent {\n    background-color: ACCENT-COLOR;\n    color: ACCENT-CONTRAST; }\n    .THEME_NAME.md-card.md-accent .md-card-header .md-icon-button:not(.md-primary):not(.md-warn):not(.md-accent) .md-icon,\n    .THEME_NAME.md-card.md-accent .md-card-actions .md-icon-button:not(.md-primary):not(.md-warn):not(.md-accent) .md-icon {\n      color: ACCENT-CONTRAST-0.87; }\n    .THEME_NAME.md-card.md-accent .md-input-container.md-input-focused input,\n    .THEME_NAME.md-card.md-accent .md-input-container.md-input-focused textarea {\n      color: ACCENT-CONTRAST;\n      text-shadow: 0 0 0 ACCENT-CONTRAST; }\n    .THEME_NAME.md-card.md-accent .md-input-container.md-input-focused label,\n    .THEME_NAME.md-card.md-accent .md-input-container.md-input-focused .md-icon:not(.md-icon-delete) {\n      color: ACCENT-CONTRAST; }\n    .THEME_NAME.md-card.md-accent .md-input-container:after {\n      background-color: ACCENT-CONTRAST; }\n    .THEME_NAME.md-card.md-accent .md-input-container input,\n    .THEME_NAME.md-card.md-accent .md-input-container textarea {\n      color: ACCENT-CONTRAST;\n      text-shadow: 0 0 0 ACCENT-CONTRAST; }\n      .THEME_NAME.md-card.md-accent .md-input-container input::-webkit-input-placeholder,\n      .THEME_NAME.md-card.md-accent .md-input-container textarea::-webkit-input-placeholder {\n        color: ACCENT-CONTRAST-0.54; }\n    .THEME_NAME.md-card.md-accent .md-input-container label,\n    .THEME_NAME.md-card.md-accent .md-input-container .md-icon:not(.md-icon-delete) {\n      color: ACCENT-CONTRAST; }\n  .THEME_NAME.md-card.md-warn {\n    background-color: WARN-COLOR;\n    color: WARN-CONTRAST; }\n    .THEME_NAME.md-card.md-warn .md-card-header .md-icon-button:not(.md-primary):not(.md-warn):not(.md-accent) .md-icon,\n    .THEME_NAME.md-card.md-warn .md-card-actions .md-icon-button:not(.md-primary):not(.md-warn):not(.md-accent) .md-icon {\n      color: WARN-CONTRAST-0.87; }\n    .THEME_NAME.md-card.md-warn .md-input-container.md-input-focused input,\n    .THEME_NAME.md-card.md-warn .md-input-container.md-input-focused textarea {\n      color: WARN-CONTRAST;\n      text-shadow: 0 0 0 WARN-CONTRAST; }\n    .THEME_NAME.md-card.md-warn .md-input-container.md-input-focused label,\n    .THEME_NAME.md-card.md-warn .md-input-container.md-input-focused .md-icon:not(.md-icon-delete) {\n      color: WARN-CONTRAST; }\n    .THEME_NAME.md-card.md-warn .md-input-container:after {\n      background-color: WARN-CONTRAST; }\n    .THEME_NAME.md-card.md-warn .md-input-container input,\n    .THEME_NAME.md-card.md-warn .md-input-container textarea {\n      color: WARN-CONTRAST;\n      text-shadow: 0 0 0 WARN-CONTRAST; }\n      .THEME_NAME.md-card.md-warn .md-input-container input::-webkit-input-placeholder,\n      .THEME_NAME.md-card.md-warn .md-input-container textarea::-webkit-input-placeholder {\n        color: WARN-CONTRAST-0.54; }\n    .THEME_NAME.md-card.md-warn .md-input-container label,\n    .THEME_NAME.md-card.md-warn .md-input-container .md-icon:not(.md-icon-delete) {\n      color: WARN-CONTRAST; }\n  .THEME_NAME.md-card .md-card-header .md-icon-button:not(.md-primary):not(.md-warn):not(.md-accent) .md-icon,\n  .THEME_NAME.md-card .md-card-actions .md-icon-button:not(.md-primary):not(.md-warn):not(.md-accent) .md-icon {\n    color: BACKGROUND-CONTRAST-0.54; }\n  .THEME_NAME.md-card > .md-card-area:after {\n    background-color: BACKGROUND-CONTRAST-0.12; }\n  .THEME_NAME.md-card .md-card-media-cover.md-text-scrim .md-backdrop {\n    background: linear-gradient(to bottom, BACKGROUND-CONTRAST-0.0 20%, BACKGROUND-CONTRAST-0.275 66%, BACKGROUND-CONTRAST-0.55 100%); }\n  .THEME_NAME.md-card .md-card-media-cover.md-solid .md-card-area {\n    background-color: BACKGROUND-CONTRAST-0.4; }\n  .THEME_NAME.md-card .md-card-expand .md-card-actions {\n    background-color: BACKGROUND-COLOR; }\n"
 
 /***/ }),
 
-/***/ 276:
+/***/ 339:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(214)
+__webpack_require__(303)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(124),
+  __webpack_require__(266),
   /* template */
-  __webpack_require__(358),
+  __webpack_require__(387),
   /* scopeId */
   null,
   /* cssModules */
@@ -541,14 +616,14 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 277:
+/***/ 340:
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
   null,
   /* template */
-  __webpack_require__(369),
+  __webpack_require__(390),
   /* scopeId */
   null,
   /* cssModules */
@@ -576,14 +651,14 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 278:
+/***/ 341:
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(125),
+  __webpack_require__(267),
   /* template */
-  __webpack_require__(353),
+  __webpack_require__(384),
   /* scopeId */
   null,
   /* cssModules */
@@ -611,14 +686,14 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 279:
+/***/ 342:
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
   null,
   /* template */
-  __webpack_require__(394),
+  __webpack_require__(407),
   /* scopeId */
   null,
   /* cssModules */
@@ -646,14 +721,14 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 280:
+/***/ 343:
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(126),
+  __webpack_require__(268),
   /* template */
-  __webpack_require__(346),
+  __webpack_require__(379),
   /* scopeId */
   null,
   /* cssModules */
@@ -681,14 +756,14 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 281:
+/***/ 344:
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
   null,
   /* template */
-  __webpack_require__(387),
+  __webpack_require__(403),
   /* scopeId */
   null,
   /* cssModules */
@@ -716,14 +791,14 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 282:
+/***/ 345:
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(127),
+  __webpack_require__(269),
   /* template */
-  __webpack_require__(382),
+  __webpack_require__(399),
   /* scopeId */
   null,
   /* cssModules */
@@ -751,14 +826,14 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 283:
+/***/ 346:
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(128),
+  __webpack_require__(270),
   /* template */
-  __webpack_require__(351),
+  __webpack_require__(383),
   /* scopeId */
   null,
   /* cssModules */
@@ -786,14 +861,14 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 284:
+/***/ 347:
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
   null,
   /* template */
-  __webpack_require__(342),
+  __webpack_require__(375),
   /* scopeId */
   null,
   /* cssModules */
@@ -821,14 +896,14 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 285:
+/***/ 348:
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(129),
+  __webpack_require__(271),
   /* template */
-  __webpack_require__(349),
+  __webpack_require__(382),
   /* scopeId */
   null,
   /* cssModules */
@@ -856,7 +931,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 342:
+/***/ 375:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -874,7 +949,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 346:
+/***/ 379:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -893,7 +968,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 349:
+/***/ 382:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -916,7 +991,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 351:
+/***/ 383:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -935,7 +1010,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 353:
+/***/ 384:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -954,7 +1029,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 358:
+/***/ 387:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -973,7 +1048,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 369:
+/***/ 390:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -991,7 +1066,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 382:
+/***/ 399:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -1009,7 +1084,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 387:
+/***/ 403:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -1027,7 +1102,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 394:
+/***/ 407:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -1048,12 +1123,12 @@ if (false) {
 /***/ 416:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(80);
+module.exports = __webpack_require__(243);
 
 
 /***/ }),
 
-/***/ 58:
+/***/ 85:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1102,81 +1177,6 @@ var getImageLightness = function getImageLightness(image, onLoad, onError) {
 };
 
 exports.default = getImageLightness;
-module.exports = exports['default'];
-
-/***/ }),
-
-/***/ 80:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = install;
-
-var _mdCard = __webpack_require__(276);
-
-var _mdCard2 = _interopRequireDefault(_mdCard);
-
-var _mdCardMedia = __webpack_require__(283);
-
-var _mdCardMedia2 = _interopRequireDefault(_mdCardMedia);
-
-var _mdCardMediaCover = __webpack_require__(285);
-
-var _mdCardMediaCover2 = _interopRequireDefault(_mdCardMediaCover);
-
-var _mdCardMediaActions = __webpack_require__(284);
-
-var _mdCardMediaActions2 = _interopRequireDefault(_mdCardMediaActions);
-
-var _mdCardHeader = __webpack_require__(281);
-
-var _mdCardHeader2 = _interopRequireDefault(_mdCardHeader);
-
-var _mdCardHeaderText = __webpack_require__(282);
-
-var _mdCardHeaderText2 = _interopRequireDefault(_mdCardHeaderText);
-
-var _mdCardContent = __webpack_require__(279);
-
-var _mdCardContent2 = _interopRequireDefault(_mdCardContent);
-
-var _mdCardActions = __webpack_require__(277);
-
-var _mdCardActions2 = _interopRequireDefault(_mdCardActions);
-
-var _mdCardArea = __webpack_require__(278);
-
-var _mdCardArea2 = _interopRequireDefault(_mdCardArea);
-
-var _mdCardExpand = __webpack_require__(280);
-
-var _mdCardExpand2 = _interopRequireDefault(_mdCardExpand);
-
-var _mdCard3 = __webpack_require__(246);
-
-var _mdCard4 = _interopRequireDefault(_mdCard3);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function install(Vue) {
-  Vue.component('md-card', _mdCard2.default);
-  Vue.component('md-card-media', _mdCardMedia2.default);
-  Vue.component('md-card-media-cover', _mdCardMediaCover2.default);
-  Vue.component('md-card-media-actions', _mdCardMediaActions2.default);
-  Vue.component('md-card-header', _mdCardHeader2.default);
-  Vue.component('md-card-header-text', _mdCardHeaderText2.default);
-  Vue.component('md-card-content', _mdCardContent2.default);
-  Vue.component('md-card-actions', _mdCardActions2.default);
-  Vue.component('md-card-area', _mdCardArea2.default);
-  Vue.component('md-card-expand', _mdCardExpand2.default);
-
-  Vue.material.styles.push(_mdCard4.default);
-}
 module.exports = exports['default'];
 
 /***/ })

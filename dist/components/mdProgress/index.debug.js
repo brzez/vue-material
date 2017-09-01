@@ -190,7 +190,37 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 154:
+/***/ 249:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = install;
+
+var _mdProgress = __webpack_require__(355);
+
+var _mdProgress2 = _interopRequireDefault(_mdProgress);
+
+var _mdProgress3 = __webpack_require__(326);
+
+var _mdProgress4 = _interopRequireDefault(_mdProgress3);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function install(Vue) {
+  Vue.component('md-progress', _mdProgress2.default);
+
+  Vue.material.styles.push(_mdProgress4.default);
+}
+module.exports = exports['default'];
+
+/***/ }),
+
+/***/ 277:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -244,32 +274,32 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 217:
+/***/ 304:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 256:
+/***/ 326:
 /***/ (function(module, exports) {
 
 module.exports = ".THEME_NAME.md-progress {\n  background-color: PRIMARY-COLOR-0.38; }\n  .THEME_NAME.md-progress:not(.md-indeterminate) .md-progress-track {\n    background-color: PRIMARY-COLOR; }\n  .THEME_NAME.md-progress .md-progress-track:after, .THEME_NAME.md-progress .md-progress-track:before {\n    background-color: PRIMARY-COLOR; }\n  .THEME_NAME.md-progress.md-accent {\n    background-color: ACCENT-COLOR-0.38; }\n    .THEME_NAME.md-progress.md-accent:not(.md-indeterminate) .md-progress-track {\n      background-color: ACCENT-COLOR; }\n    .THEME_NAME.md-progress.md-accent .md-progress-track:after, .THEME_NAME.md-progress.md-accent .md-progress-track:before {\n      background-color: ACCENT-COLOR; }\n  .THEME_NAME.md-progress.md-warn {\n    background-color: WARN-COLOR-0.38; }\n    .THEME_NAME.md-progress.md-warn:not(.md-indeterminate) .md-progress-track {\n      background-color: WARN-COLOR; }\n    .THEME_NAME.md-progress.md-warn .md-progress-track:after, .THEME_NAME.md-progress.md-warn .md-progress-track:before {\n      background-color: WARN-COLOR; }\n"
 
 /***/ }),
 
-/***/ 315:
+/***/ 355:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(217)
+__webpack_require__(304)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(154),
+  __webpack_require__(277),
   /* template */
-  __webpack_require__(363),
+  __webpack_require__(388),
   /* scopeId */
   null,
   /* cssModules */
@@ -297,7 +327,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 363:
+/***/ 388:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -327,38 +357,8 @@ if (false) {
 /***/ 428:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(92);
+module.exports = __webpack_require__(249);
 
-
-/***/ }),
-
-/***/ 92:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = install;
-
-var _mdProgress = __webpack_require__(315);
-
-var _mdProgress2 = _interopRequireDefault(_mdProgress);
-
-var _mdProgress3 = __webpack_require__(256);
-
-var _mdProgress4 = _interopRequireDefault(_mdProgress3);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function install(Vue) {
-  Vue.component('md-progress', _mdProgress2.default);
-
-  Vue.material.styles.push(_mdProgress4.default);
-}
-module.exports = exports['default'];
 
 /***/ })
 

@@ -132,25 +132,49 @@ module.exports = function normalizeComponent (
 
 /***/ }),
 
-/***/ 229:
+/***/ 245:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = install;
+
+var _mdDivider = __webpack_require__(351);
+
+var _mdDivider2 = _interopRequireDefault(_mdDivider);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function install(Vue) {
+  Vue.component('md-divider', _mdDivider2.default);
+}
+module.exports = exports['default'];
+
+/***/ }),
+
+/***/ 314:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 296:
+/***/ 351:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(229)
+__webpack_require__(314)
 
 var Component = __webpack_require__(0)(
   /* script */
   null,
   /* template */
-  __webpack_require__(385),
+  __webpack_require__(401),
   /* scopeId */
   null,
   /* cssModules */
@@ -178,7 +202,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 385:
+/***/ 401:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -199,32 +223,8 @@ if (false) {
 /***/ 420:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(84);
+module.exports = __webpack_require__(245);
 
-
-/***/ }),
-
-/***/ 84:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = install;
-
-var _mdDivider = __webpack_require__(296);
-
-var _mdDivider2 = _interopRequireDefault(_mdDivider);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function install(Vue) {
-  Vue.component('md-divider', _mdDivider2.default);
-}
-module.exports = exports['default'];
 
 /***/ })
 

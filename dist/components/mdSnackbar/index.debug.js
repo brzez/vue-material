@@ -7,7 +7,7 @@
 		exports["VueMaterial"] = factory(require("vue"));
 	else
 		root["VueMaterial"] = factory(root["Vue"]);
-})(this, (function(__WEBPACK_EXTERNAL_MODULE_409__) {
+})(this, (function(__WEBPACK_EXTERNAL_MODULE_239__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -200,36 +200,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _vue = __webpack_require__(409);
-
-var _vue2 = _interopRequireDefault(_vue);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var manager = new _vue2.default({
-  data: function data() {
-    return {
-      current: null
-    };
-  }
-});
-
-exports.default = manager;
-module.exports = exports['default'];
-
-/***/ }),
-
-/***/ 160:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _uniqueId = __webpack_require__(41);
+var _uniqueId = __webpack_require__(49);
 
 var _uniqueId2 = _interopRequireDefault(_uniqueId);
 
@@ -241,7 +212,7 @@ var _mixin = __webpack_require__(1);
 
 var _mixin2 = _interopRequireDefault(_mixin);
 
-var _manager = __webpack_require__(110);
+var _manager = __webpack_require__(79);
 
 var _manager2 = _interopRequireDefault(_manager);
 
@@ -383,32 +354,32 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 239:
+/***/ 161:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 261:
+/***/ 172:
 /***/ (function(module, exports) {
 
 module.exports = ".THEME_NAME .md-snackbar .md-ink-ripple, .THEME_NAME.md-snackbar .md-ink-ripple {\n  color: #fff; }\n"
 
 /***/ }),
 
-/***/ 321:
+/***/ 203:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(239)
+__webpack_require__(161)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(160),
+  __webpack_require__(110),
   /* template */
-  __webpack_require__(404),
+  __webpack_require__(234),
   /* scopeId */
   null,
   /* cssModules */
@@ -433,6 +404,44 @@ if (false) {(function () {
 
 module.exports = Component.exports
 
+
+/***/ }),
+
+/***/ 234:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "md-snackbar",
+    class: [_vm.themeClass, _vm.classes],
+    attrs: {
+      "id": _vm.snackbarId
+    },
+    on: {
+      "mouseenter": _vm.pauseTimeout,
+      "mouseleave": _vm.resumeTimeout
+    }
+  }, [_c('div', {
+    ref: "container",
+    staticClass: "md-snackbar-container"
+  }, [_c('div', {
+    staticClass: "md-snackbar-content"
+  }, [_vm._t("default")], 2)])])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-b6cb8878", module.exports)
+  }
+}
+
+/***/ }),
+
+/***/ 239:
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_239__;
 
 /***/ }),
 
@@ -466,45 +475,15 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 404:
+/***/ 433:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "md-snackbar",
-    class: [_vm.themeClass, _vm.classes],
-    attrs: {
-      "id": _vm.snackbarId
-    },
-    on: {
-      "mouseenter": _vm.pauseTimeout,
-      "mouseleave": _vm.resumeTimeout
-    }
-  }, [_c('div', {
-    ref: "container",
-    staticClass: "md-snackbar-container"
-  }, [_c('div', {
-    staticClass: "md-snackbar-content"
-  }, [_vm._t("default")], 2)])])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-b6cb8878", module.exports)
-  }
-}
+module.exports = __webpack_require__(73);
+
 
 /***/ }),
 
-/***/ 409:
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE_409__;
-
-/***/ }),
-
-/***/ 41:
+/***/ 49:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -522,15 +501,7 @@ module.exports = exports["default"];
 
 /***/ }),
 
-/***/ 433:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(97);
-
-
-/***/ }),
-
-/***/ 97:
+/***/ 73:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -541,11 +512,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = install;
 
-var _mdSnackbar = __webpack_require__(321);
+var _mdSnackbar = __webpack_require__(203);
 
 var _mdSnackbar2 = _interopRequireDefault(_mdSnackbar);
 
-var _mdSnackbar3 = __webpack_require__(261);
+var _mdSnackbar3 = __webpack_require__(172);
 
 var _mdSnackbar4 = _interopRequireDefault(_mdSnackbar3);
 
@@ -556,6 +527,35 @@ function install(Vue) {
 
   Vue.material.styles.push(_mdSnackbar4.default);
 }
+module.exports = exports['default'];
+
+/***/ }),
+
+/***/ 79:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _vue = __webpack_require__(239);
+
+var _vue2 = _interopRequireDefault(_vue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var manager = new _vue2.default({
+  data: function data() {
+    return {
+      current: null
+    };
+  }
+});
+
+exports.default = manager;
 module.exports = exports['default'];
 
 /***/ })

@@ -190,7 +190,37 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 159:
+/***/ 252:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = install;
+
+var _mdSidenav = __webpack_require__(358);
+
+var _mdSidenav2 = _interopRequireDefault(_mdSidenav);
+
+var _mdSidenav3 = __webpack_require__(329);
+
+var _mdSidenav4 = _interopRequireDefault(_mdSidenav3);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function install(Vue) {
+  Vue.component('md-sidenav', _mdSidenav2.default);
+
+  Vue.material.styles.push(_mdSidenav4.default);
+}
+module.exports = exports['default'];
+
+/***/ }),
+
+/***/ 280:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -334,32 +364,32 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 227:
+/***/ 312:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 260:
+/***/ 329:
 /***/ (function(module, exports) {
 
 module.exports = ".THEME_NAME.md-sidenav .md-sidenav-content {\n  background-color: BACKGROUND-COLOR;\n  color: BACKGROUND-CONTRAST; }\n"
 
 /***/ }),
 
-/***/ 320:
+/***/ 358:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(227)
+__webpack_require__(312)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(159),
+  __webpack_require__(280),
   /* template */
-  __webpack_require__(381),
+  __webpack_require__(398),
   /* scopeId */
   null,
   /* cssModules */
@@ -387,7 +417,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 381:
+/***/ 398:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -426,38 +456,8 @@ if (false) {
 /***/ 432:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(96);
+module.exports = __webpack_require__(252);
 
-
-/***/ }),
-
-/***/ 96:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = install;
-
-var _mdSidenav = __webpack_require__(320);
-
-var _mdSidenav2 = _interopRequireDefault(_mdSidenav);
-
-var _mdSidenav3 = __webpack_require__(260);
-
-var _mdSidenav4 = _interopRequireDefault(_mdSidenav3);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function install(Vue) {
-  Vue.component('md-sidenav', _mdSidenav2.default);
-
-  Vue.material.styles.push(_mdSidenav4.default);
-}
-module.exports = exports['default'];
 
 /***/ })
 

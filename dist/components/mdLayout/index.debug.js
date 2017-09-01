@@ -132,7 +132,31 @@ module.exports = function normalizeComponent (
 
 /***/ }),
 
-/***/ 144:
+/***/ 248:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = install;
+
+var _mdLayout = __webpack_require__(354);
+
+var _mdLayout2 = _interopRequireDefault(_mdLayout);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function install(Vue) {
+  Vue.component('md-layout', _mdLayout2.default);
+}
+module.exports = exports['default'];
+
+/***/ }),
+
+/***/ 276:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -284,23 +308,23 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 236:
+/***/ 316:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 304:
+/***/ 354:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(236)
+__webpack_require__(316)
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(144),
+  __webpack_require__(276),
   /* template */
   null,
   /* scopeId */
@@ -332,32 +356,8 @@ module.exports = Component.exports
 /***/ 425:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(89);
+module.exports = __webpack_require__(248);
 
-
-/***/ }),
-
-/***/ 89:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = install;
-
-var _mdLayout = __webpack_require__(304);
-
-var _mdLayout2 = _interopRequireDefault(_mdLayout);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function install(Vue) {
-  Vue.component('md-layout', _mdLayout2.default);
-}
-module.exports = exports['default'];
 
 /***/ })
 

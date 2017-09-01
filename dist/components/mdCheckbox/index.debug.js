@@ -190,7 +190,149 @@ module.exports = exports['default'];
 
 /***/ }),
 
-/***/ 130:
+/***/ 159:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 165:
+/***/ (function(module, exports) {
+
+module.exports = ".THEME_NAME.md-checkbox.md-checked .md-checkbox-container {\n  background-color: ACCENT-COLOR;\n  border-color: ACCENT-COLOR; }\n  .THEME_NAME.md-checkbox.md-checked .md-checkbox-container:after {\n    border-color: ACCENT-CONTRAST; }\n\n.THEME_NAME.md-checkbox .md-ink-ripple {\n  color: ACCENT-COLOR; }\n\n.THEME_NAME.md-checkbox .md-ripple {\n  opacity: .26; }\n\n.THEME_NAME.md-checkbox.md-primary.md-checked .md-checkbox-container {\n  background-color: PRIMARY-COLOR;\n  border-color: PRIMARY-COLOR; }\n  .THEME_NAME.md-checkbox.md-primary.md-checked .md-checkbox-container:after {\n    border-color: PRIMARY-CONTRAST; }\n\n.THEME_NAME.md-checkbox.md-primary .md-ink-ripple {\n  color: PRIMARY-COLOR; }\n\n.THEME_NAME.md-checkbox.md-warn.md-checked .md-checkbox-container {\n  background-color: WARN-COLOR;\n  border-color: WARN-COLOR; }\n  .THEME_NAME.md-checkbox.md-warn.md-checked .md-checkbox-container:after {\n    border-color: WARN-CONTRAST; }\n\n.THEME_NAME.md-checkbox.md-warn .md-ink-ripple {\n  color: WARN-COLOR; }\n\n.THEME_NAME.md-checkbox.md-disabled.md-checked .md-checkbox-container {\n  background-color: rgba(0, 0, 0, 0.26);\n  border-color: transparent; }\n\n.THEME_NAME.md-checkbox.md-disabled:not(.md-checked) .md-checkbox-container {\n  border-color: rgba(0, 0, 0, 0.26); }\n"
+
+/***/ }),
+
+/***/ 178:
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/* styles */
+__webpack_require__(159)
+
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(89),
+  /* template */
+  __webpack_require__(232),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "/home/brzez/workspace/dige/vue-material/src/components/mdCheckbox/mdCheckbox.vue"
+if (Component.esModule && Object.keys(Component.esModule).some((function (key) {return key !== "default" && key !== "__esModule"}))) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] mdCheckbox.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-9f41cdf8", Component.options)
+  } else {
+    hotAPI.reload("data-v-9f41cdf8", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 232:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "md-checkbox",
+    class: [_vm.themeClass, _vm.classes]
+  }, [_c('div', {
+    staticClass: "md-checkbox-container",
+    attrs: {
+      "tabindex": "0"
+    },
+    on: {
+      "click": function($event) {
+        $event.stopPropagation();
+        _vm.toggleCheck($event)
+      }
+    }
+  }, [_c('input', {
+    attrs: {
+      "type": "checkbox",
+      "name": _vm.name,
+      "id": _vm.id,
+      "disabled": _vm.disabled,
+      "tabindex": "-1"
+    },
+    domProps: {
+      "value": _vm.value,
+      "checked": _vm.checked
+    }
+  }), _vm._v(" "), _c('md-ink-ripple', {
+    attrs: {
+      "md-disabled": _vm.disabled
+    }
+  })], 1), _vm._v(" "), (_vm.$slots.default) ? _c('label', {
+    staticClass: "md-checkbox-label",
+    attrs: {
+      "for": _vm.id || _vm.name
+    }
+  }, [_vm._t("default")], 2) : _vm._e()])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-9f41cdf8", module.exports)
+  }
+}
+
+/***/ }),
+
+/***/ 417:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(66);
+
+
+/***/ }),
+
+/***/ 66:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = install;
+
+var _mdCheckbox = __webpack_require__(178);
+
+var _mdCheckbox2 = _interopRequireDefault(_mdCheckbox);
+
+var _mdCheckbox3 = __webpack_require__(165);
+
+var _mdCheckbox4 = _interopRequireDefault(_mdCheckbox3);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function install(Vue) {
+  Vue.component('md-checkbox', _mdCheckbox2.default);
+
+  Vue.material.styles.push(_mdCheckbox4.default);
+}
+module.exports = exports['default'];
+
+/***/ }),
+
+/***/ 89:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -258,148 +400,6 @@ exports.default = {
 //
 //
 
-module.exports = exports['default'];
-
-/***/ }),
-
-/***/ 234:
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 247:
-/***/ (function(module, exports) {
-
-module.exports = ".THEME_NAME.md-checkbox.md-checked .md-checkbox-container {\n  background-color: ACCENT-COLOR;\n  border-color: ACCENT-COLOR; }\n  .THEME_NAME.md-checkbox.md-checked .md-checkbox-container:after {\n    border-color: ACCENT-CONTRAST; }\n\n.THEME_NAME.md-checkbox .md-ink-ripple {\n  color: ACCENT-COLOR; }\n\n.THEME_NAME.md-checkbox .md-ripple {\n  opacity: .26; }\n\n.THEME_NAME.md-checkbox.md-primary.md-checked .md-checkbox-container {\n  background-color: PRIMARY-COLOR;\n  border-color: PRIMARY-COLOR; }\n  .THEME_NAME.md-checkbox.md-primary.md-checked .md-checkbox-container:after {\n    border-color: PRIMARY-CONTRAST; }\n\n.THEME_NAME.md-checkbox.md-primary .md-ink-ripple {\n  color: PRIMARY-COLOR; }\n\n.THEME_NAME.md-checkbox.md-warn.md-checked .md-checkbox-container {\n  background-color: WARN-COLOR;\n  border-color: WARN-COLOR; }\n  .THEME_NAME.md-checkbox.md-warn.md-checked .md-checkbox-container:after {\n    border-color: WARN-CONTRAST; }\n\n.THEME_NAME.md-checkbox.md-warn .md-ink-ripple {\n  color: WARN-COLOR; }\n\n.THEME_NAME.md-checkbox.md-disabled.md-checked .md-checkbox-container {\n  background-color: rgba(0, 0, 0, 0.26);\n  border-color: transparent; }\n\n.THEME_NAME.md-checkbox.md-disabled:not(.md-checked) .md-checkbox-container {\n  border-color: rgba(0, 0, 0, 0.26); }\n"
-
-/***/ }),
-
-/***/ 286:
-/***/ (function(module, exports, __webpack_require__) {
-
-
-/* styles */
-__webpack_require__(234)
-
-var Component = __webpack_require__(0)(
-  /* script */
-  __webpack_require__(130),
-  /* template */
-  __webpack_require__(400),
-  /* scopeId */
-  null,
-  /* cssModules */
-  null
-)
-Component.options.__file = "/home/brzez/workspace/dige/vue-material/src/components/mdCheckbox/mdCheckbox.vue"
-if (Component.esModule && Object.keys(Component.esModule).some((function (key) {return key !== "default" && key !== "__esModule"}))) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] mdCheckbox.vue: functional components are not supported with templates, they should use render functions.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-9f41cdf8", Component.options)
-  } else {
-    hotAPI.reload("data-v-9f41cdf8", Component.options)
-  }
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-
-/***/ 400:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "md-checkbox",
-    class: [_vm.themeClass, _vm.classes]
-  }, [_c('div', {
-    staticClass: "md-checkbox-container",
-    attrs: {
-      "tabindex": "0"
-    },
-    on: {
-      "click": function($event) {
-        $event.stopPropagation();
-        _vm.toggleCheck($event)
-      }
-    }
-  }, [_c('input', {
-    attrs: {
-      "type": "checkbox",
-      "name": _vm.name,
-      "id": _vm.id,
-      "disabled": _vm.disabled,
-      "tabindex": "-1"
-    },
-    domProps: {
-      "value": _vm.value,
-      "checked": _vm.checked
-    }
-  }), _vm._v(" "), _c('md-ink-ripple', {
-    attrs: {
-      "md-disabled": _vm.disabled
-    }
-  })], 1), _vm._v(" "), (_vm.$slots.default) ? _c('label', {
-    staticClass: "md-checkbox-label",
-    attrs: {
-      "for": _vm.id || _vm.name
-    }
-  }, [_vm._t("default")], 2) : _vm._e()])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-9f41cdf8", module.exports)
-  }
-}
-
-/***/ }),
-
-/***/ 417:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(81);
-
-
-/***/ }),
-
-/***/ 81:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = install;
-
-var _mdCheckbox = __webpack_require__(286);
-
-var _mdCheckbox2 = _interopRequireDefault(_mdCheckbox);
-
-var _mdCheckbox3 = __webpack_require__(247);
-
-var _mdCheckbox4 = _interopRequireDefault(_mdCheckbox3);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function install(Vue) {
-  Vue.component('md-checkbox', _mdCheckbox2.default);
-
-  Vue.material.styles.push(_mdCheckbox4.default);
-}
 module.exports = exports['default'];
 
 /***/ })
